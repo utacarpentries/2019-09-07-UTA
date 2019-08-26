@@ -469,43 +469,44 @@ please preview your site before committing, and make sure to run
 
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="editor-windows">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It is installed along with Git.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-          <strong>Be aware that you must
-            add its installation directory to your system path.</strong>
-          Please ask your instructor to help you do this.
-        </p>
+      <p>
+       You can use your favorite text editor. If you do not have one, we recommend
+       <a href="https://www.sublimetext.com/">Sublime Text 3</a>.  
+       After installation is complete, follow steps below to use Sublime Text from Git-Bash window: <br>
+		    1) Open Git-Bash from the start menu.<br>
+		    2) Type: <code>cd</code> <kbd>Enter</kbd> to make sure you are in your home directory.<br>
+		    3) Type: <code>notepad .bash_profile</code> <kbd>Enter</kbd>. This will create .bash_profile file in Notepad. <br>
+		    Add the following text to the file:<br>
+		    <code>export PATH=$PATH:"/c/Program Files/Sublime Text 3/"</code> <br>
+        4) Save the file and exit Notepad.<br>
+		    5) In the Git-Bash window type: <code>source ~/.bash_profile</code> <kbd>Enter</kbd> The changes you made to .bashrc are now in effect.
+        You should now be able to launch Sublime Text by typing: <code>subl</code> <kbd>Enter</kbd>.
+		    If you run into trouble please ask your instructor for help.
+      </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="editor-macos">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-          for an example on how to open nano.
-          It should be pre-installed.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        </p>
+      <p>
+        You can use your favorite text editor. If you do not have one, we recommend
+        <a href="https://www.sublimetext.com/">Sublime Text</a>.<br>
+        To open Sublime Text from the terminal/bash.<br>
+		1) Go to the Utilities in Finder and open terminal.<br>
+		2) Type: <code>open ~/.bash_profile</code> in the terminal. This will open a text file. <br>
+		3) Add the following text to the file:<br>
+		<code>
+		alias subl="open -a /Applications/Sublime\ Text.app" <br>
+		</code><br>
+		4) Save the file and exit TextEdit. <br>
+		<br> 5) Type: <code>source ~/.bash_profile</code> in the terminal.<br>
+		You should now be able to launch Sublime Text by typing: <code>subl</code> <kbd>Return</kbd>.
+		If you run into trouble please ask your instructor to help you with this.
+      </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="editor-linux">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It should be pre-installed.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-          <a href="https://kate-editor.org/">Kate</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        </p>
+      <p>
+        You can use your favorite text editor. If you do not have one, we recommend
+        <a href="https://www.sublimetext.com/">Sublime Text</a>.<br>
+        Please follow this <a href="https://www.sublimetext.com/docs/3/linux_repositories.html">link</a> for installation instructions depending on your linux distribution. If you run into trouble please ask your instructor to help you with this.
+      </p>
       </article>
     </div>
   </div>
